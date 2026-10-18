@@ -7,7 +7,6 @@
   // Mirrors cloudflare-worker/src/pricing.js: INR in India, USD everywhere else
   var CATALOG = {
     IN: {
-      note: "Prices in INR, GST included.",
       plans: {
         monthly: ["₹33", "/month", "Flexible access"],
         quarterly: ["₹99", "/3 months", "3 months · ₹33/month"],
@@ -16,7 +15,6 @@
       }
     },
     INTL: {
-      note: "Prices in US dollars, taxes included.",
       plans: {
         monthly: ["$1", "/month", "Flexible access"],
         quarterly: ["$2.99", "/3 months", "3 months · about $1/month"],
@@ -32,11 +30,8 @@
     lifetime: "Pay once. No recurring charges, ever."
   };
 
-  var priceNote = document.getElementById("price-note");
-
   function render(region) {
     var entry = CATALOG[region] || CATALOG.INTL;
-    priceNote.textContent = entry.note;
     var shown = 0;
     document.querySelectorAll("[data-plan-card]").forEach(function (card) {
       var id = card.getAttribute("data-plan-card");
