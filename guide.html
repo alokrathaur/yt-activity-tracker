@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Setup Guide · YT Activity Tracker</title>
+  <meta name="description" content="Step-by-step: install the YT Activity Tracker APK, get past Play Protect, and grant Usage Access, Media Playback Access and Accessibility.">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon.svg" alt="" width="30" height="30">YT Activity Tracker</a>
+    <nav class="nav">
+      <a class="hide-sm" href="index.html#features">Features</a>
+      <a class="hide-sm" href="index.html#pricing">Pricing</a>
+      <a class="hide-xs" href="guide.html">Setup guide</a>
+      <a class="btn btn-primary btn-sm" href="downloads/YT-Activity-Tracker.apk" download>Download</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section style="padding-bottom:16px">
+    <div class="eyebrow">Setup guide</div>
+    <h1>Install &amp; set up in about 2 minutes</h1>
+    <p class="lead">Install the APK, then give the app the permissions it needs to see what you watch on YouTube. Screenshots are from a realme phone (Android 11). Menu names differ a little on Samsung, Xiaomi and Pixel, but the steps are the same.</p>
+    <ul class="toc">
+      <li><a href="#install">1. Download &amp; install</a></li>
+      <li><a href="#play-protect">2. Play Protect</a></li>
+      <li><a href="#welcome">3. Open the app</a></li>
+      <li><a href="#usage">4. Usage Access</a></li>
+      <li><a href="#media">5. Media Playback Access</a></li>
+      <li><a href="#accessibility">6. Accessibility (optional)</a></li>
+      <li><a href="#notifications">7. Notifications</a></li>
+      <li><a href="#battery">8. Keep it running</a></li>
+      <li><a href="#full-access">9. Full Access</a></li>
+      <li><a href="#trouble">Troubleshooting</a></li>
+    </ul>
+  </section>
+
+  <article class="step" id="install">
+    <div>
+      <div class="step-num">1</div>
+      <h2>Download &amp; install the APK</h2>
+      <ol>
+        <li>On your Android phone, tap <a href="downloads/YT-Activity-Tracker.apk" download>Download APK</a>. If Chrome asks, tap <span class="ui">Download anyway</span>.</li>
+        <li>Open the downloaded file from the notification, or from <span class="ui">Files → Downloads</span>.</li>
+        <li>The first time, Android asks to allow installs from your browser. Tap <span class="ui">Settings</span> and switch on <span class="ui">Allow apps from this source</span> (or <span class="ui">Allow from this source</span>), then go back.</li>
+        <li>Tap <span class="ui">Install</span>.</li>
+      </ol>
+      <div class="note ok">You can switch "Allow apps from this source" off again after installing.</div>
+      <div class="actions"><a class="btn btn-primary" href="downloads/YT-Activity-Tracker.apk" download>Download APK</a></div>
+    </div>
+    <div class="step-shots">
+      <div class="phone sm"><img src="assets/screens/sys-unknown.webp" alt="Install unknown apps: Allow apps from this source switched on for Chrome" width="540" height="1098" loading="lazy"></div>
+    </div>
+  </article>
+
+  <article class="step" id="play-protect">
+    <div>
+      <div class="step-num">2</div>
+      <h2>If Play Protect blocks the install</h2>
+      <p>Google Play Protect warns about apps from outside the Play Store that use Accessibility. You'll see something like <em>"Blocked by Play Protect"</em> or <em>"Unsafe app blocked"</em>.</p>
+      <h3>Option A: Install anyway <span class="tag">try first</span></h3>
+      <ol>
+        <li>On the warning, tap <span class="ui">More details</span>.</li>
+        <li>Tap <span class="ui">Install anyway</span>.</li>
+      </ol>
+      <h3>Option B: Pause Play Protect while installing</h3>
+      <p>If there's no "Install anyway" button:</p>
+      <ol>
+        <li>Open the <span class="ui">Play Store</span>, tap your profile picture (top right), then <span class="ui">Play Protect</span>.</li>
+        <li>Tap the <span class="ui">⚙ gear</span> (top right).</li>
+        <li>Switch off <span class="ui">Scan apps with Play Protect</span> and confirm with <span class="ui">Turn off</span>.</li>
+        <li>Install the APK again (step 1).</li>
+        <li>Come back here and switch <span class="ui">Scan apps with Play Protect</span> back on.</li>
+      </ol>
+      <div class="note">Turning scanning back on won't remove YT Activity Tracker. If Play Protect later suggests uninstalling it, tap <span class="ui">Keep app</span> or <span class="ui">Ignore</span>.</div>
+    </div>
+    <div class="step-shots">
+      <div class="mock-dialog" role="img" aria-label="Illustration of the Play Protect warning with More details and Install anyway">
+        <svg class="shield" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 3v6c0 5.3-3.4 9.6-8 11-4.6-1.4-8-5.7-8-11V5z"/><path d="M11 7h2v6h-2zM11 15h2v2h-2z" fill="#fff"/></svg>
+        <h4>Blocked by Play Protect</h4>
+        <p>This app was built for an older version of Android or requests sensitive permissions…</p>
+        <p style="margin-bottom:8px"><span class="hl">More details ⌄</span></p>
+        <div class="row"><span class="hl">Install anyway</span><span>OK</span></div>
+        <p style="margin:14px 0 0;font-size:.75rem">Illustration: wording varies by phone.</p>
+      </div>
+      <div class="phone sm"><img src="assets/screens/sys-protect-settings.webp" alt="Play Protect settings with Scan apps with Play Protect switch" width="540" height="1098" loading="lazy"></div>
+      <div class="phone sm"><img src="assets/screens/sys-protect.webp" alt="Play Protect page with the Turn on button to switch scanning back on" width="540" height="1098" loading="lazy"></div>
+    </div>
+  </article>
+
+  <article class="step" id="welcome">
+    <div>
+      <div class="step-num">3</div>
+      <h2>Open the app</h2>
+      <p>Open <strong>YouTube Activity Tracker</strong>. A short 5-step setup walks you through each permission. Tap <span class="ui">Next</span> to begin.</p>
+      <p class="muted">You can reopen it any time from <span class="ui">Settings → Review Permission Setup</span>.</p>
+    </div>
+    <div class="step-shots">
+      <div class="phone sm"><img src="assets/screens/onb1.webp" alt="Welcome to YouTube Tracker setup screen" width="540" height="1098" loading="lazy"></div>
+    </div>
+  </article>
+
+  <article class="step" id="usage">
+    <div>
+      <div class="step-num">4</div>
+      <h2>Usage Access <span class="tag">required</span></h2>
+      <p>Lets the app see when the YouTube app is open, to measure your screen time.</p>
+      <ol>
+        <li>Tap <span class="ui">Open Usage Access Settings</span>.</li>
+        <li>Find <strong>YouTube Activity Tracker</strong> in the list and tap it.</li>
+        <li>Switch on <span class="ui">Permit usage access</span>.</li>
+        <li>Press back. The app shows <span class="ui">Permission Granted ✓</span>.</li>
+      </ol>
+    </div>
+    <div class="step-shots">
+      <div class="phone sm"><img src="assets/screens/onb2.webp" alt="Grant Usage Access step in the app" width="540" height="1098" loading="lazy"></div>
+      <div class="phone sm"><img src="assets/screens/sys-usage.webp" alt="Android Usage access page with Permit usage access switched on" width="540" height="1098" loading="lazy"></div>
+    </div>
+  </article>
+
+  <article class="step" id="media">
+    <div>
+      <div class="step-num">5</div>
+      <h2>Media Playback Access <span class="tag">recommended</span></h2>
+      <p>This is what tells the app <strong>which video and channel</strong> is playing and whether it's playing or paused. Without it you only get total YouTube time.</p>
+      <ol>
+        <li>On step 3 of the setup, tap <span class="ui">Allow Media Playback Access</span>.</li>
+        <li>Android opens <span class="ui">Notification access</span>. Tap <strong>YouTube Activity Tracker</strong>.</li>
+        <li>Switch on <span class="ui">Allow notification access</span> and confirm with <span class="ui">Allow</span>.</li>
+      </ol>
+      <div class="note ok">Android calls this "notification access", but the app reads only YouTube's media info (title, channel, play/pause). Your messages and other notifications are never read.</div>
+    </div>
+    <div class="step-shots">
+      <div class="phone sm"><img src="assets/screens/onb3.webp" alt="Enhanced Content Tracking step with Media Playback Access" width="540" height="1098" loading="lazy"></div>
+      <div class="phone sm"><img src="assets/screens/sys-notif-app.webp" alt="Notification access page with Allow notification access switched on" width="540" height="1098" loading="lazy"></div>
+    </div>
+  </article>
+
+  <article class="step" id="accessibility">
+    <div>
+      <div class="step-num">6</div>
+      <h2>Accessibility <span class="tag">optional</span></h2>
+      <p>Lets the app recognise <strong>playlists, Shorts and ads</strong> from the text on the YouTube screen. It works only inside the YouTube app.</p>
+      <ol>
+        <li>On the same setup step, tap <span class="ui">Enable Accessibility Tracking</span>.</li>
+        <li>Scroll to <span class="ui">Downloaded apps</span> (or <span class="ui">Installed apps</span>) and tap <strong>YouTube Activity Tracker</strong>.</li>
+        <li>Switch it on and tap <span class="ui">Allow</span>.</li>
+      </ol>
+      <div class="note"><strong>Android 13+: "Restricted setting" message?</strong> Android blocks Accessibility for sideloaded apps until you allow it:
+        <ol style="margin:.5em 0 0">
+          <li>Open <span class="ui">Settings → Apps → YouTube Activity Tracker</span>.</li>
+          <li>Tap the <span class="ui">⋮</span> menu (top right), then <span class="ui">Allow restricted settings</span>, and confirm.</li>
+          <li>Go back to Accessibility and switch the app on.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="step-shots">
+      <div class="phone sm"><img src="assets/screens/sys-a11y.webp" alt="Accessibility settings with YouTube Activity Tracker under Downloaded apps" width="540" height="1098" loading="lazy"></div>
+      <div class="phone sm"><img src="assets/screens/sys-a11y-app.webp" alt="YouTube Activity Tracker accessibility switch" width="540" height="1098" loading="lazy"></div>
+    </div>
+  </article>
+
+  <article class="step" id="notifications">
+    <div>
+      <div class="step-num">7</div>
+      <h2>Notifications <span class="tag">optional</span></h2>
+      <p>Needed only for daily limit alerts. Tap <span class="ui">Configure Notifications</span> and allow them. Then tap <span class="ui">Next</span>, check the summary, and tap <span class="ui">Finish Setup</span>.</p>
+      <p class="muted">Set your daily target later in <span class="ui">Settings → Daily YouTube Target Limit</span>.</p>
+    </div>
+    <div class="step-shots">
+      <div class="phone sm"><img src="assets/screens/onb4.webp" alt="Daily Limit Notifications step" width="540" height="1098" loading="lazy"></div>
+      <div class="phone sm"><img src="assets/screens/onb5.webp" alt="Setup Verification summary" width="540" height="1098" loading="lazy"></div>
+    </div>
+  </article>
+
+  <article class="step" id="battery">
+    <div>
+      <div class="step-num">8</div>
+      <h2>Keep it running in the background</h2>
+      <p>Some phones close background apps aggressively. Long-press the app icon → <span class="ui">App info</span>, then:</p>
+      <ul>
+        <li><strong>realme / OPPO (ColorOS):</strong> <span class="ui">Battery usage</span> → allow <span class="ui">Background activity</span> and <span class="ui">Auto launch</span>.</li>
+        <li><strong>Xiaomi / Redmi / POCO:</strong> <span class="ui">Battery saver</span> → <span class="ui">No restrictions</span>, and turn on <span class="ui">Autostart</span>.</li>
+        <li><strong>Vivo / iQOO:</strong> <span class="ui">Battery</span> → allow <span class="ui">High background power consumption</span>.</li>
+        <li><strong>Samsung:</strong> <span class="ui">Battery</span> → <span class="ui">Unrestricted</span>.</li>
+        <li><strong>Pixel / others:</strong> <span class="ui">App battery usage</span> → <span class="ui">Unrestricted</span>.</li>
+      </ul>
+      <p class="muted">Screen time is still read from Android's own records when you open the app, so you never lose time. This only keeps live video detection running.</p>
+    </div>
+    <div class="step-shots">
+      <div class="phone sm"><img src="assets/screens/dash-free.webp" alt="Dashboard on the free plan" width="540" height="1098" loading="lazy"></div>
+    </div>
+  </article>
+
+  <article class="step" id="full-access">
+    <div>
+      <div class="step-num">9</div>
+      <h2>Unlock Full Access <span class="tag">optional</span></h2>
+      <p>The free plan tracks every channel and shows full numbers for <a href="https://www.youtube.com/@primestategaming" target="_blank" rel="noopener">@PrimeStateGaming</a>. Other channels, totals and charts show <strong>•• ••</strong> until you unlock.</p>
+      <ol>
+        <li>Tap the <span class="ui">👁 eye with a lock</span> on any tab, or go to <span class="ui">Settings → Unlock Full Access</span>.</li>
+        <li>Pick a plan: <strong>Monthly ₹33</strong>, <strong>Quarterly ₹99</strong>, <strong>Yearly ₹299</strong> (best value) or <strong>Lifetime ₹599</strong> one-time.</li>
+        <li>Enter your email and tap <span class="ui">Subscribe</span> or <span class="ui">Get Lifetime Access</span>. Complete checkout (powered by Dodo Payments).</li>
+        <li>Return to the app. It activates automatically, or tap <span class="ui">Already paid? Activate</span>.</li>
+      </ol>
+      <p>With Full Access, the eye button hides and shows every number with one tap. To cancel a subscription, open <span class="ui">Settings → Full Access → Manage Subscription</span>; you keep access until the paid period ends.</p>
+    </div>
+    <div class="step-shots">
+      <div class="phone sm"><img src="assets/screens/premium-free2.webp" alt="Unlock with your email: Pay and Unlock, Already paid? Activate" width="540" height="1098" loading="lazy"></div>
+      <div class="phone sm"><img src="assets/screens/premium-full.webp" alt="Full Access active screen" width="540" height="1098" loading="lazy"></div>
+    </div>
+  </article>
+
+  <section id="trouble" style="max-width:760px">
+    <h2>Troubleshooting</h2>
+    <details>
+      <summary>Accessibility switched itself off after an update</summary>
+      <p>Some phones (especially realme / OPPO) turn an app's Accessibility service off when the app is updated. Open <span class="ui">Settings → Accessibility → YouTube Activity Tracker</span> and switch it on again.</p>
+    </details>
+    <details>
+      <summary>"App not installed" error</summary>
+      <p>An older copy signed differently is already installed. Uninstall it first, then install the new APK. This deletes the old history.</p>
+    </details>
+    <details>
+      <summary>Channels show as "Unidentified Content"</summary>
+      <p>Media Playback Access is off. Turn it on (step 5). Videos watched before that can be fixed from <span class="ui">History → ⋮ → Edit Attribution</span>.</p>
+    </details>
+    <details>
+      <summary>Numbers aren't updating</summary>
+      <p>Tap the refresh button on the dashboard. Check that Usage Access is still allowed (step 4) and that background activity is allowed (step 8).</p>
+    </details>
+    <details>
+      <summary>Paid, but still locked</summary>
+      <p>Use the exact email you paid with, wait a minute, then tap <span class="ui">Already paid? Activate</span>. If it says the device limit is reached, remove Full Access from an old phone in <span class="ui">Settings → Full Access → Remove from this device</span>.</p>
+    </details>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="index.html"><img src="assets/icon.svg" alt="" width="26" height="26">YT Activity Tracker</a>
+      <p class="muted">Watch-time tracking for gamers, streamers and YouTube creators.</p>
+      <p class="muted"><a href="guide.html">Setup guide</a> · <a href="index.html#pricing">Pricing</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a></p>
+      <p class="muted">Contact: <a href="mailto:primestategaming@gmail.com" data-contact-email>primestategaming@gmail.com</a></p>
+    </div>
+    <div>
+      <h4>Follow @primestategaming</h4>
+      <ul class="social">
+        <li><a href="https://www.youtube.com/@primestategaming" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.instagram.com/primestategaming" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://kick.com/primestategaming" target="_blank" rel="noopener">Kick</a></li>
+        <li><a href="https://www.twitch.tv/primestategaming" target="_blank" rel="noopener">Twitch</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4><a href="index.html#partners">Our partners</a></h4>
+      <ul class="partners">
+        <li><a href="https://psgcast.online" target="_blank" rel="noopener">PSG Cast</a></li>
+        <li><a href="https://getmacmint.store" target="_blank" rel="noopener">MacMint</a></li>
+        <li><a href="https://legendprixai.lol" target="_blank" rel="noopener">LegendPrixAI</a></li>
+        <li>Dotmesh: Dots &amp; Boxes · <a href="https://apps.apple.com/in/app/dotmesh-dots-boxes-game/id6761758144" target="_blank" rel="noopener">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.legendprixai.dotmesh&amp;hl=en_IN" target="_blank" rel="noopener">Play Store</a></li>
+        <li><a href="https://tiny-orbit-url.vercel.app/" target="_blank" rel="noopener">Tiny Orbit URL</a></li>
+        <li><a href="https://topbump.lol" target="_blank" rel="noopener">TopBump</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <span>© 2026 LegendPrixAI · YT Activity Tracker</span>
+    <span>Not affiliated with or endorsed by YouTube or Google.</span>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/contact.js"></script>
+</body>
+</html>

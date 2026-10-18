@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout · YT Activity Tracker</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon.svg" alt="" width="30" height="30">YT Activity Tracker</a>
+  </div>
+</header>
+
+<!--
+  Dodo returns here with ?status=… (succeeded / active / processing / failed / cancelled …);
+  the license worker uses ?status=already_active and ?status=checkout_error. This page only
+  explains what happened: access is unlocked by the verified webhook, never by this redirect.
+-->
+<main class="wrap center" style="max-width:620px">
+  <section>
+    <div data-state="ok">
+      <div class="icon" style="margin:0 auto 16px;width:64px;height:64px;border-radius:50%;background:var(--ok-soft);color:var(--ok)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:32px;height:32px"><path d="M5 12l5 5L20 7"/></svg>
+      </div>
+      <h1>Payment complete 🎉</h1>
+      <p class="lead">Thanks for supporting YT Activity Tracker. Full Access is linked to the email you paid with<span data-plan></span>.</p>
+      <div class="actions"><a class="btn btn-primary" href="yttracker://premium">Open the app &amp; activate</a></div>
+    </div>
+
+    <div data-state="pending" hidden>
+      <h1>Payment processing…</h1>
+      <p class="lead">Your bank is still confirming the payment. That usually takes a minute or two, sometimes longer for UPI or net banking. You won't be charged twice.</p>
+      <p class="muted">When it's confirmed, open the app and tap <span class="ui">Already paid? Activate</span>.</p>
+      <div class="actions"><a class="btn btn-primary" href="yttracker://premium">Open the app</a></div>
+    </div>
+
+    <div data-state="failed" hidden>
+      <h1>Payment didn't go through</h1>
+      <p class="lead">The payment was declined or cancelled, and you haven't been charged. You can try again with another card or payment method.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="index.html#pricing">Try again</a>
+        <a class="btn btn-ghost" href="yttracker://premium">Back to the app</a>
+      </div>
+    </div>
+
+    <div data-state="already" hidden>
+      <h1>You already have Full Access</h1>
+      <p class="lead">This email already has an active plan<span data-plan></span>, so you weren't charged. Open the app and tap <span class="ui">Already paid? Activate</span>.</p>
+      <div class="actions"><a class="btn btn-primary" href="yttracker://premium">Open the app</a></div>
+    </div>
+
+    <div data-state="error" hidden>
+      <h1>Checkout isn't available right now</h1>
+      <p class="lead">Something went wrong before checkout opened, and you haven't been charged. Please try again in a few minutes.</p>
+      <div class="actions"><a class="btn btn-primary" href="index.html#pricing">Back to pricing</a></div>
+    </div>
+
+    <div class="card" style="text-align:left;margin-top:28px" data-help>
+      <h3>If the app doesn't unlock</h3>
+      <ol style="margin:0;padding-left:1.2em;color:var(--muted)">
+        <li>Open YT Activity Tracker → <span class="ui">Settings → Unlock Full Access</span>.</li>
+        <li>Enter the <strong>same email</strong> you used at checkout.</li>
+        <li>Tap <span class="ui">Already paid? Activate</span>. If it says no payment was found, wait a minute and try again.</li>
+      </ol>
+    </div>
+
+    <p class="muted" style="margin-top:32px"><a href="guide.html#full-access">Full Access help</a> · <a href="index.html#pricing">Pricing &amp; cancellation</a> · <a href="index.html">Home</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="index.html"><img src="assets/icon.svg" alt="" width="26" height="26">YT Activity Tracker</a>
+      <p class="muted">Watch-time tracking for gamers, streamers and YouTube creators.</p>
+      <p class="muted"><a href="guide.html">Setup guide</a> · <a href="index.html#pricing">Pricing</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a></p>
+      <p class="muted">Contact: <a href="mailto:primestategaming@gmail.com" data-contact-email>primestategaming@gmail.com</a></p>
+    </div>
+    <div>
+      <h4>Follow @primestategaming</h4>
+      <ul class="social">
+        <li><a href="https://www.youtube.com/@primestategaming" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.instagram.com/primestategaming" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://kick.com/primestategaming" target="_blank" rel="noopener">Kick</a></li>
+        <li><a href="https://www.twitch.tv/primestategaming" target="_blank" rel="noopener">Twitch</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4><a href="index.html#partners">Our partners</a></h4>
+      <ul class="partners">
+        <li><a href="https://psgcast.online" target="_blank" rel="noopener">PSG Cast</a></li>
+        <li><a href="https://getmacmint.store" target="_blank" rel="noopener">MacMint</a></li>
+        <li><a href="https://legendprixai.lol" target="_blank" rel="noopener">LegendPrixAI</a></li>
+        <li>Dotmesh: Dots &amp; Boxes · <a href="https://apps.apple.com/in/app/dotmesh-dots-boxes-game/id6761758144" target="_blank" rel="noopener">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.legendprixai.dotmesh&amp;hl=en_IN" target="_blank" rel="noopener">Play Store</a></li>
+        <li><a href="https://tiny-orbit-url.vercel.app/" target="_blank" rel="noopener">Tiny Orbit URL</a></li>
+        <li><a href="https://topbump.lol" target="_blank" rel="noopener">TopBump</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <span>© 2026 LegendPrixAI · YT Activity Tracker</span>
+    <span>Not affiliated with or endorsed by YouTube or Google.</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var status = (params.get("status") || "").toLowerCase();
+    var plans = { monthly: "Monthly", quarterly: "Quarterly", yearly: "Yearly", lifetime: "Lifetime", granted: "Granted" };
+    var state =
+      status === "already_active" ? "already" :
+      status === "checkout_error" ? "error" :
+      /^(processing|pending|requires_customer_action|requires_payment_method)$/.test(status) ? "pending" :
+      /^(failed|cancelled|canceled|expired|declined|on_hold)$/.test(status) ? "failed" :
+      "ok";
+
+    document.querySelectorAll("[data-state]").forEach(function (el) {
+      el.hidden = el.getAttribute("data-state") !== state;
+    });
+    document.querySelector("[data-help]").hidden = state === "failed" || state === "error";
+
+    var plan = plans[(params.get("plan") || "").toLowerCase()];
+    if (plan) document.querySelectorAll("[data-plan]").forEach(function (el) { el.textContent = " (" + plan + ")"; });
+  })();
+</script>
+<script src="assets/config.js"></script>
+<script src="assets/contact.js"></script>
+</body>
+</html>
